@@ -1,0 +1,14 @@
+{ "players": [{
+    "name": "Johnny",
+    "playerClass": "Wizard",
+    "weapon": "Wand",
+    "vitality": 15,
+    "id": "1"
+    }, {
+      "name": "Lonny",
+      "playerClass": "Warrior",
+      "weapon": "Sword",
+      "vitality": 9,
+      "id": "2"
+      }]
+}
