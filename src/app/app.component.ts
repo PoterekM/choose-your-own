@@ -15,11 +15,15 @@ export class AppComponent implements OnInit {
   title = 'The wood!';
    players: FirebaseListObservable<any[]>;
 
-   constructor(private router: Router, private playerService: PlayerService) {}
+   constructor(private router: Router, private playerService:   PlayerService) {}
 
- ngOnInit() {
-    this.players = this.playerService.getPlayers();
+   ngOnInit() {
+     this.players = this.playerService.getPlayers();
  }
 
+ goToDetailPage(clickedPlayer: Player) {
+   console.log(clickedPlayer);
+  //  this.router.navigate(['players', clickedPlayer.$key]);
+}
 
 }

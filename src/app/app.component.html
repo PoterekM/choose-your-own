@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <div *ngFor="let player of players | async">
+      <div *ngFor="let player of players | async" (click)="goToDetailPage(player)">
 
              <p>{{player.name}}{{player.playerClass}}{{player.weapon}} Life: {{player.vitality}}</p>
            </div>

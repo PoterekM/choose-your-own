@@ -22,7 +22,11 @@ export class NewPlayerComponent implements OnInit {
   submitForm(name: string, playerClass: string, weapon: string, vitality: number) {
     var newPlayer: Player = new Player(name, playerClass, weapon, vitality);
     this.playerService.addPlayer(newPlayer);
+
   }
 
+//   goToDetailPage(clickedPlayer: Player) {
+//   this.router.navigate(['players', clickedPlayer.$key]);
+// }
 
 }
