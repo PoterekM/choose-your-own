@@ -1,7 +1,26 @@
-<h2>Choose your Character</h2>
-
-<div *ngFor="let player of players" class="panel panel-default">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Choose your Character</h3>
+  </div>
   <div class="panel-body">
-    <h3><em>{{player.name}}</em> {{player.playerClass}}{{player.weapon}}</h3>
+    <div>
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Class:</label>
+        <br>
+        <input #newplayerClass>
+      </div>
+
+      <div>
+        <label>Weapon:</label>
+        <br>
+        <input #newWeapon></input>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Player } from '../player.model';
+// import { FirebaseListObservable } from 'angularfire2/database';
+
 
 @Component({
   selector: 'app-new-player',
@@ -11,5 +14,11 @@ export class NewPlayerComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  submitForm(name: string, playerClass: string, weapon: string, vitality: number) {
+    var newPlayer: Player = new Player(name, playerClass, weapon, vitality);
+    console.log(newPlayer);
+  }
+
 
 }
