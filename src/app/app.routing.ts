@@ -8,6 +8,7 @@ const appRoutes: Routes = [
     path: '',
     component: NewPlayerComponent
   }
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

@@ -19,8 +19,14 @@
       <div>
         <label>Weapon:</label>
         <br>
-        <input #newWeapon></input>
+        <input #newWeapon>
       </div>
+      <div>  
+        <label>Vitality:</label>
+        <br>
+        <input #newVitality>
+      </div>
+       <button (click)="submitForm(newName.value, newplayerClass.value, newWeapon.value, newVitality.value); newName.value=''; newplayerClass.value=''; newWeapon.value=''; newVitality.value='';">Add</button>
     </div>
   </div>
 </div>
