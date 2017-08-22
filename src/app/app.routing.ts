@@ -5,7 +5,7 @@ import { NewPlayerComponent } from './new-player/new-player.component';
 
 const appRoutes: Routes = [
   {
-    path: '',
+    path: 'new-player',
     component: NewPlayerComponent
   }
 
